@@ -1,0 +1,41 @@
+/* CSS Document */
+body,div,li,ul,input,span,a,h1,h2,h3,h4,img{margin:0px;padding:0px;}
+a{text-decoration:none;border:none;}
+img{border:none;}
+#container{
+	width:1000px;
+	height:585px;
+	margin:0px auto 0px auto;
+}
+#top{
+	width:980px;
+	height:61px;
+	background:#f6f6f6;
+	}
+.play_logo{
+	margin:10px 0 0 10px;
+	float:left;
+	display:inherit;
+	_background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/play_logo.png',sizingMethod="crop");
+	}	
+.play_text{
+	margin:20px 0 0 80px;
+	float:left;
+	_background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/play_text.png',sizingMethod="crop");
+	display:inherit;
+	}
+#main{
+	width:980px;
+	height:550px;
+	margin:0px 0 0 20px\9;
+}
+video{
+	width:960px;
+	height:550px;
+	margin:10px 0 0 20px;	
+	}
+#none{
+	display:none\0;
+	}

@@ -1,0 +1,27 @@
+/* common */
+*{margin:0;padding:0;font-size:12px;}
+textarea{resize:none}
+h1, h2, p,  dl, {text-align:left; font-weight:normal;}
+input[type="submit"],input[type="button"] {cursor:pointer;}
+input{cursor:expression(this.type=="button"||this.type=="submit"||this.type=="radio"||this.type=="checkbox" ? "pointer" :"text"); }/* IE6 */
+
+*+html img {margin-bottom:0!important;} /* Fix IE7 */
+html>body img {margin-bottom:-3px;}  /* Fix FireFox */
+@media all and (min-width:0px){img {margin-bottom:-2px!important;}}  /*Fix Opera */
+
+th,i,b,s{ font-style:normal; font-weight:normal; text-decoration:none;}
+/* CSS Document */
+.infopic{ width:920px; height:200px; position:relative; overflow:hidden; margin:0px auto;}
+.piclist{ height:200px; position:absolute; top:0; left:0;}
+.piclist li img{ height:190px;border:1px #BABABA solid;}
+.piclist li{float:left;width:260px;height:200px;display: inline;
+overflow: hidden;}
+.piclist li a{margin:1px 0 0 1px;border:none;	display: block;position: absolute;overflow: hidden;}
+.piclist li a span img{display:none;cursor:hand;text-align:left;}
+.piclist li a:hover span{width:148px;height:160px;background:#000;color:#fff;display: block;position: absolute;bottom: 0;left: 8px;top:10px; filter: alpha(opacity=70);-moz-opacity: 0.8;opacity: 0.8;padding: 60px 60px;line-height:24px;}
+.piclist li a span{font:normal 12px/1.5em Verdana,Arial;margin:0 0 20px 0;display:none;cursor:hand;}
+
+
+.pic_prev,.pic_next{ width:30px; height:50px; background:url(../images/icon.png) no-repeat; position:absolute; top:75px; cursor:pointer;}
+.pic_prev{ background-position:0 0; left:0;}
+.pic_next{ background-position:0 -60px; right:0;}

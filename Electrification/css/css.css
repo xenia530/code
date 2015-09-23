@@ -1,0 +1,168 @@
+/* CSS Document */
+
+body,div,li,ul,input,span,a,h1,h2,h3,h4,img{margin:0px;padding:0px;}
+a{text-decoration:none;border:none;}
+img{border:none;}
+body{
+	background-color:#1d4e90;
+	}
+#container{
+	width:1000px;
+	height:585px;
+	margin:0px auto 0px auto;
+	background-color:#1d4e90;
+}
+#main{
+	width:1000px;
+	height:407px;
+	margin:120px 0 0 0;
+	background-color:#2186ca;
+}
+/*这是top*/
+#top{
+	width:1000px;
+	height:36px;
+	background-color:#2186ca;
+}
+/*这是middle*/
+#middle{
+	width:1000px;
+	height:335px;
+	background-color:#fff;
+}
+/*这是left*/
+#left{
+	width:365px;
+	height:335px;
+	float:left;
+	background:url(../images/left_bg.jpg) repeat-x;
+	}
+.nav01 a{
+	width:18px;
+	height:222px;
+	float:left;
+	display:inline;
+	margin:114px 0 0 92px;
+	background:url(../images/text01.png) no-repeat;
+	_background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/text01.png',sizingMethod="crop");
+	}
+.nav01 a:hover{
+	background:url(../images/text01_over.png) no-repeat;
+	_background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/text01_over.png',sizingMethod="crop");
+	}
+.nav02 a{
+	width:18px;
+	height:222px;
+	float:left;
+	display:inline;
+	margin:114px 0 0 66px;
+	background:url(../images/text02.png) no-repeat;
+	_background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/text02.png',sizingMethod="crop");
+	}
+.nav02 a:hover{
+	background:url(../images/text02_over.png) no-repeat;
+	_background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/text02_over.png',sizingMethod="crop");
+	}
+.nav03 a{
+	width:18px;
+	height:222px;
+	float:left;
+	display:inline;
+	margin:114px 0 0 66px;
+	background:url(../images/text03.png) no-repeat;
+	_background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/text03.png',sizingMethod="crop");
+	}
+.nav03 a:hover{
+	background:url(../images/text03_over.png) no-repeat;
+	_background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/text03_over.png',sizingMethod="crop");
+	}
+.nav04 a{
+	width:18px;
+	height:222px;
+	float:left;
+	display:inline;
+	margin:114px 0 0 60px;
+	background:url(../images/text04.png) no-repeat;
+	_background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/text04.png',sizingMethod="crop");
+	}
+.nav04 a:hover{
+	background:url(../images/text04_over.png) no-repeat;
+	_background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/text04_over.png',sizingMethod="crop");
+	}
+/*这是right*/
+#right{
+	width:635px;
+	height:335px;
+	float:left;
+	background:url(../images/right_bg.jpg) no-repeat;
+	}
+.rect01{
+	width:77px;
+	height:77px;
+	margin:2px 0 0 132px;
+	display:inherit;
+	}
+.rect02{
+	width:77px;
+	height:77px;
+	margin:79px 0 0 163px;
+	_margin:75px 0 0 163px;
+	display:inherit;
+	}
+.rect03{
+	width:77px;
+	height:77px;
+	margin:-227px 0 0 532px;
+	_margin:-231px 0 0 532px;
+	display:inherit;
+	}
+.rect04{
+	width:77px;
+	height:77px;
+	margin:37px 0 0 517px;
+	_margin:33px 0 0 517px;
+	display:inherit;
+	}
+
+/*这是down*/
+#down{
+	width:1000px;
+	height:37px;
+	background-color:#2186ca;
+}
+.page01{
+	width:42px;
+	height:37px;
+	float:left;
+	display:inline;
+	margin:0 0 0 81px;
+	}
+.page02{
+	width:39px;
+	height:37px;
+	float:left;
+	display:inline;
+	margin:0 0 0 39px;
+	}
+.page03{
+	width:39px;
+	height:37px;
+	float:left;
+	display:inline;
+	margin:0 0 0 46px;
+	}
+.page04{
+	width:31px;
+	height:37px;
+	float:left;
+	display:inline;
+	margin:0 0 0 46px;
+	}

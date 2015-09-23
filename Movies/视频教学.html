@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>视频教学</title>
+<link href="css/css5.css" rel="stylesheet" type="text/css">
+<script src="js/AC_RunActiveContent.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script language="javascript">
+		$(document).ready(function() {
+
+			/* 	1st example	*/
+
+			/// wrap inner content of each anchor with first layer and append background layer
+			$("#menu1 li a").wrapInner( '<span class="out"></span>' ).append( '<span class="bg"></span>' );
+
+			// loop each anchor and add copy of text content
+			$("#menu1 li a").each(function() {
+				$( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+			});
+
+			$("#menu1 li a").hover(function() {
+				// this function is fired when the mouse is moved over
+				$(".out",	this).stop().animate({'top':	'40px'},	250); // move down - hide
+				$(".over",	this).stop().animate({'top':	'0px'},		250); // move down - show
+				$(".bg",	this).stop().animate({'top':	'0px'},		120); // move down - show
+
+			}, function() {
+				// this function is fired when the mouse is moved off
+				$(".out",	this).stop().animate({'top':	'0px'},		250); // move up - show
+				$(".over",	this).stop().animate({'top':	'-40px'},	250); // move up - hide
+				$(".bg",	this).stop().animate({'top':	'-40px'},	120); // move up - hide
+			});
+					
+
+			/*	2nd example	*/
+			
+			$("#menu2 li a").wrapInner( '<span class="out"></span>' );
+			
+			$("#menu2 li a").each(function() {
+				$( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+			});
+
+			$("#menu2 li a").hover(function() {
+				$(".out",	this).stop().animate({'top':	'40px'},	300); // move down - hide
+				$(".over",	this).stop().animate({'top':	'0px'},		300); // move down - show
+
+			}, function() {
+				$(".out",	this).stop().animate({'top':	'0px'},		300); // move up - show
+				$(".over",	this).stop().animate({'top':	'-40px'},	300); // move up - hide
+			});
+
+		});
+
+	</script>
+</head>
+
+<body>
+	<DIV id=AdLayer><A href="#top"><IMG src="images/top.png"></A></DIV>
+    <script type="text/javascript"src="js/lanrentuku.js"></script>
+	<div id="top">
+        	<a href="#"><img src="images/logo.jpg" /></a>
+            <div class="top_right">
+            	<span class="text01"><a href="#">陈婷婷，欢迎你！</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="#">退出</a></span>
+                <form method="get" name="commonSearch" class="search">
+               <input value=""  class="search_value" type="text">
+               <input id="button"  type="submit" value="" >
+                   </form>
+            </div> 
+            </div>
+            <div id="Top">
+            <div class="clear"></div>
+                 	<div id="menu2" class="menu">
+	<ul>
+                    <li><a href="index.html">首　　页</a></li>
+                    <li><a href="课程设置.html">课程设置</a></li>
+                    <li><a href="教学团队.html">教学团队</a></li>
+                    <li><a href="教学内容.html">教学内容</a></li>
+                    <li><a href="视频教学.html">视频教学</a></li>
+                    <li><a href="教学效果.html">教学效果</a></li>
+                    <li><a href="申报材料.html">申报材料</a></li>
+	</ul>
+	<div class="cls"></div>
+</div>
+        </div>
+        
+        <div id="main">
+            <div id="middle">
+                <div id="middle_left">
+                	<div class="title"><span class="text02">视频教学</span></div>
+                    <ul>
+                        <a href="#"style="color:#a5b807;border:1px solid #a5b807;"><li>
+                        <div class="imgbg" style="background:url(images/ico_05.jpg)"></div>Edius</li></a>
+                        <a href="#" ><li><div class="imgbg" ></div>Affter </li></a>
+                        <a href="#" ><li><div class="imgbg" ></div>Premiere</li></a>
+                        <a href="#" ><li><div class="imgbg" ></div>插件视频</li></a>
+                    </ul>
+                </div>
+                <div id="middle_right">
+                	<img src="images/text.jpg" />
+                    <div class="text"><img src="images/dian.jpg" />首页》视频教学》Edius视频教学</div>
+                                                <div class="middleright_main">
+                                 <!--middle_right-->
+    <div class="middle_right">
+    
+    
+ 
+    <!--right-->
+	<!--new-->
+    <div class="right_topmiddle">
+   		<div class="right_topul">
+  		  <ul>
+        <li><a href="video/1界面介绍-nx~1.flv">·界面介绍
+        </a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/2.EDIUS教程-采集.flv">·EDIUS采集
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/2编辑前设置-nx.flv">·编辑前设置
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/3D画中画及其设置.flv">·3D画中画及其设置
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/3调入已有素材.flv">·调入已有素材
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/4.EDIUS教程-图像调整.flv">·图像调整
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/10.EDIUS教程-马赛克.flv">·马赛克
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+         <li><a href="video/17.EDIUS教程-安全色.flv">·安全色
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/21.EDIUS教程-Herolyph字幕.flv">·EDIUS教程-Herolyph字幕
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/dxl-1多段素材整合.flv">·多段素材整合
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/dxl-2画中画抠像.flv">·画中画抠像
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/dxl-3画中画嵌套.flv">·画中画嵌套
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/jj-1插入和覆盖.flv">·插入和覆盖
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/jj-2波纹模式.flv">·波纹模式
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+         <li><a href="video/jj-3同步模式.flv">·同步模式
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/jj-4三四点编辑.flv">·三四点编辑
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/jj-5剪裁模式.flv">·剪裁模式
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/jj-6多机位.flv">·多机位
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/jj-7调整画面布局.flv">·调整画面布局
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/jj-8速度控制.flv">·速度控制
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/jj-9持续时间设定.flv">·持续时间设定
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+         <li><a href="video/jxg-3使用素材库中的光效素材.flv">·使用素材库中的光效素材
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/jxg-6镜头推拉摇移.flv">·镜头推拉摇移
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/QUCIK TITLE字幕使用.flv">·QUCIK TITLE字幕使用
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/TITLE MOTION字幕使用.flv">·TITLE MOTION字幕使用
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/zc-4字幕中的激光效果.flv">·字幕中的激光效果
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/zc-5闪白效果.flv">·闪白效果
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+        <li><a href="video/zc-6黑起黑落.flv">·黑起黑落
+        </span></a><span style="float:right; color:#444444;">2013-6-29</span></li>
+
+    		</ul>
+            </div>
+            <!--页码-->
+    <div class="yema">
+    <ul>
+    <li><a href="#">第一页</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">...</a></li>
+    <li><a href="#">234</a></li>
+    <li><a href="#">尾页</a></li>
+    
+    </ul>
+    </div>
+ 	<!--页码-->
+
+    <!--new-->
+<!--right-->
+</div>
+</div>
+<!--middle-->
+                </div>
+             </div>
+         </div>
+         </div>
+          <div class="clear"></div>
+        <div id="down">
+        	<div id="down_top">
+            	<img src="images/ICO_04.jpg" />
+                <span class="text06"><a href="#">友情链接</a></span>&nbsp;&nbsp;
+                <a href="#">浙江水利水电学院</a>  &nbsp;&nbsp;
+                 <a href="#"> 精品课程网 </a>  &nbsp;&nbsp;
+                 <a href="#">  浙江省水利厅</a>&nbsp;&nbsp;
+                   <a href="#">   水利部  </a>  &nbsp;&nbsp;
+                   <a href="#">  浙江教育网</a>&nbsp;&nbsp;
+                     <a href="#">    教育部</a> &nbsp;&nbsp; 
+                   <a href="#">    浙江在线网  </a>
+            </div>
+            <div id="down_down"><span class="text08"><a href="#">Copyright @ 2011 浙江水利水电学院 版权所有<br />
+				中国 浙江 杭州 下沙 学林街583号 信息工程与艺术设计学院  技术支持：影视制作课程组</a></span></div>
+        </div>
+        <script type="text/javascript">
+$(document).ready(function(){	
+	$("area[rel^='prettyPhoto']").prettyPhoto();
+	$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+})
+</script>
+</body>
+</html>
