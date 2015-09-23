@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>脉信网——公司转让</title>
+<meta name="Keywords" content="商标转让，商标转让网，中国商标转让网，注册商标转让">
+<meta name="Description" content="商标转让">
+<link type="text/css" rel="stylesheet" href="css/new.css">
+<link type="text/css" rel="stylesheet" href="css/wyycxzzlxxym.css">
+
+</head>
+<body>
+<script>
+var roll_image = new Array;
+var image_link = new Array;
+var small_img = new Array;
+
+roll_image[0] = 'images/01.jpg';
+image_link[0] = '#';
+small_img[0] = 'images/button_over.jpg';
+
+roll_image[1] = 'images/02.jpg';
+image_link[1] = '#';
+small_img[1] = 'images/button_over.jpg';
+
+roll_image[2] = 'images/03.jpg';
+image_link[2] = '#';
+small_img[2] = 'images/button_over.jpg';
+
+
+var cliImg = '';
+var cliImgSrc = '';
+var imgNo = Math.round(Math.random() * 3);
+
+var interval = 3000;
+var setTime = '';
+
+function click_simg(ci, no){
+ var pImg = document.all.bigimg;
+ var pLink = document.all.imglink;
+
+ if(cliImg == '') {
+  cliImg = ci;
+  cliImgSrc = ci.src;
+  ci.src = small_img[no];
+  imgNo=no;
+  pImg.src =roll_image[no];
+  pLink.href = image_link[no];
+ } else if(cliImg != ci) {
+  cliImg.src = cliImgSrc;
+  cliImg = ci;
+  cliImgSrc = ci.src;
+  ci.src = small_img[no];
+  imgNo=no;
+  pImg.src =roll_image[no];
+  pLink.href = image_link[no];
+ }
+ clearTimeout(setTime);
+ setTime=setTimeout("rotate()",interval);
+}
+
+function rotate(){
+ imgNo = (imgNo >= 2) ? 0 : imgNo+1;
+ var ci = eval('document.all.num_img'+imgNo);
+
+ document.all.bigimg.filters.blendTrans.apply();
+ document.all.imglink.href=image_link[imgNo];
+ document.all.bigimg.src=roll_image[imgNo];
+ document.all.bigimg.filters.blendTrans.play();
+
+ if(cliImg == '') {
+  cliImg = ci;
+  cliImgSrc = ci.src;
+  ci.src = small_img[imgNo];
+ } else if(cliImg != ci) {
+  cliImg.src = cliImgSrc;
+  cliImg = ci;
+  cliImgSrc = ci.src;
+  ci.src = small_img[imgNo];
+ }
+
+ setTime=setTimeout("rotate()",interval);
+}
+
+//-->
+</script>
+<!--这是头部-->
+<div id="header">
+<div id="logo"><a href="#"><img src="images/logo_over.jpg" alt="商标转让" /></a></div>
+</div>
+<div id="nav">
+  <div class="nav_cl">
+    <ul>
+      <li> <a href="#" title="首页">首页</a> </li>
+      <li> <a href="#" title="公司简介">公司简介</a> </li>
+      <li> <a href="#" title="公司转让" class="on">公司转让</a> </li>
+      <li> <a href="#" title="商标超市">商标超市</a> </li>
+      <li> <a href="#" title="商标分类">商标分类</a> </li>
+      <li> <a href="#" title="找项目">找项目</a> </li>
+      <li> <a href="#" title="找资金">找资金</a> </li>
+      <li> <a href="#" title="联系我们">联系我们</a> </li>
+      <li> <a href="#" title="业务项目">业务项目</a> </li>
+    </ul>
+  </div>
+</div>
+<!--这是内容-->
+<div id="clear"></div>
+<div id="main_bookxx"> 
+<div class="main_bookxx1"> 
+<div class="main_bookxx1Left">
+<br/>
+<h1>XXXXXXX有限公司</h1>
+<p>意向资金：天使投资 vc投资 PE投资</p>
+<div><h2>所在地区</h2><h3>浙江杭州</h3></div>
+<div><h2>所在地区</h2><h3>浙江杭州</h3></div>
+</div>
+<div class="main_bookxx1Right">
+<img src="images/详细页面01.jpg">
+<p><b>陈</b>先生</p>
+<p><b>董事长</b></p>
+<p><b>浙江杭州市下沙区某IT互联网公司</b></p>
+<p>手机：1826555555</p>
+<p>邮箱：moumoumoukeji@163.com</p>
+<p>QQ：100000000</p>
+<p>地址：浙江省杭州市下沙区天城东路吉野大厦8032</p>
+</div>
+</div>
+</div>
+<div id="main"> 
+  <!--这是main_bookxx1-->
+<div id="main_bookxx2"> 
+<div class="main_bookxx2Left">
+<div class="title"><a href="#">经营范围</a></div>
+</div>
+<div class="main_bookxx2Right">
+<table cellspacing=0 cellpadding=0 width=680 border=0>
+  <tbody>
+    <tr>
+      <td height=300>
+<a onFocus=this.blur() href="#" name=imglink><img style="FILTER: blendTrans(duration=1)" height=300 src="images/01.jpg" width=680 border=0 name=bigimg></a>
+      </td>
+    </tr>
+    <tr>
+      <td height=27><table cellspacing=0 cellpadding=0 width="50%" border=0 style="margin:-50px 0 0 140px;">
+        <tbody>
+          <tr >
+            <td width=3></td>
+            <td width=61><img style="CURSOR: hand" 
+                        onClick="click_simg(this, 0);" height=15 
+                        src="images/button_on.jpg" width=61 
+                        border=0 name=num_img0></td>
+            <td width=3></td>
+            <td width=61><img style="CURSOR: hand" 
+                        onClick="click_simg(this, 1);" height=15 
+                        src="images/button_on.jpg" width=61 
+                        border=0 name=num_img1></td>
+            <td width=3></td>
+            <td width=61><img style="CURSOR: hand" 
+                        onClick="click_simg(this, 2);" height=15 
+                        src="images/button_on.jpg" width=61 
+                        border=0 name=num_img2></td>
+           
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  <script>rotate();</script>
+
+</div>
+</div>
+<div id="main_bookxx3"> 
+<div class="title"><a href="#">他的信息</a></div>
+<div class="book01">
+<h1>【项目】浙江杭州互联网项目股权融资1000万-5000万</h1>
+<a href="#"><img src="images/button_ljtj2.jpg"></a>
+<p>所在地区：杭州市 | 所属行业：IT互联网 | 项目融资方式：股权融资<span class="text06">2014-06-18 00:00:00</span></p>
+</div>
+<div class="book01">
+<h1>【项目】浙江杭州互联网项目股权融资1000万-5000万</h1>
+<a href="#"><img src="images/button_ljtj2.jpg"></a>
+<p>所在地区：杭州市 | 所属行业：IT互联网 | 项目融资方式：股权融资<span class="text06">2014-06-18 00:00:00</span></p>
+</div>
+</div>
+<div id="main_bookxx4"> 
+<div class="title"><a href="#">公司简介</a></div>
+<h1>杭州纱旭科技有限公司</h1>
+<p>杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；</p>
+<p>杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；</p>
+<p>杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；</p>
+<p>杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；</p>
+<p>杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；</p>
+<p>杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；</p>
+<p>杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；</p>
+<p>杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；杭州纱旭科技有限公司成立于2009；</p>
+</div>
+  
+  <div id="clear"></div>
+  <!--这是main_book5-->
+  <div id="main_book5">
+    <div class="text04"> <b>友情链接</b>：<a href="#">中国商标网</a><a href="#"> 夺宝商标转让网</a><a href="#"> 先锋商标网</a><a href="#"> 国家知识产权局 </a><a href="#">通达商标</a><a href="#"> 自主商标网</a><a href="#"> 广州商标转让</a><a href="#"> 独立商标转让</a><a href="#"> 广东商标转让网</a><a href="#">浙江商标转让网</a><a href="#"> 温州商标转让网</a><a href="#"> 广州商标转让网</a><a href="#"> 北京上班转让网</a><a href="#">香港商标转让网</a><a href="#"> 香港公司查询</a> <br/>
+      <b>商标局快速通道</b>：<a href="#">商标申请</a><a href="#"> 表格下载</a><a href="#"> 网上申请</a><a href="#"> 商标查询</a><a href="#"> 代理机构查询</a><a href="#"> 商标公告</a><a href="#"> 商标要闻</a><a href="#"> 驰名商标查询</a><a href="#"> 法律法规</a> </div>
+  </div>
+</div>
+<div id="clear"></div>
+<!--这是底部-->
+<div id="foot">
+  <div id="foot_cl">
+    <div id="foot_top">
+      <div id="foot_topLeft">
+        <div class="foot_ul">
+          <ul>
+            <li><b>平台保障</b></li>
+            <li><a href="#"> 会员身份实名认证</a></li>
+            <li><a href="#"> 会员评价信誉指数</a></li>
+            <li><a href="#"> 举报投诉违规处罚</a></li>
+          </ul>
+        </div>
+        <div class="foot_ul">
+          <ul>
+            <li><b>新手指导</b></li>
+            <li><a href="#"> 免费注册生成名</a></li>
+            <li><a href="#"> 免费发布投融信息</a></li>
+            <li><a href="#"> 信息投递流程</a></li>
+            <li><a href="#"> 常见问题解答</a></li>
+          </ul>
+        </div>
+        <div class="foot_ul">
+          <ul>
+            <li><b>投融服务</b></li>
+            <li><a href="#"> 融资宝</a></li>
+            <li><a href="#"> 投资宝</a></li>
+            <li><a href="#"> 委托刷新</a></li>
+            <li><a href="#"> 信息投递</a></li>
+            <li><a href="#"> 广告服务</a></li>
+          </ul>
+        </div>
+        <div class="foot_ul">
+          <ul>
+            <li><b>关于投融届</b></li>
+            <li><a href="#"> 投融届介绍</a></li>
+            <li><a href="#"> 联系我们</a></li>
+            <li><a href="#"> 网站公告</a></li>
+            <li><a href="#"> 隐私条款</a></li>
+            <li><a href="#"> 网站地图</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="foot_topRight">
+        <div class="foot_ul"> <img src="images/call.jpg" alt="tell"/>
+          <ul>
+            <li>全国服务热线</li>
+            <li>400-858-9000</li>
+            <li>投诉电话：0571-56132500</li>
+            <li>周一到周六 9：00-20：00</li>
+            <li>邮箱：kefu@trjcn.com</li>
+            <li><img src="images/down_ico01.jpg"><img src="images/down_ico02.jpg"/></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="foot_down">
+      <div class="foot_downTop">信息索引：<a href="#">A</a><a href="#"> B</a><a href="#"> C</a><a href="#"> D</a><a href="#"> F</a><a href="#"> G</a><a href="#"> H </a><a href="#">J </a><a href="#">K</a><a href="#"> M </a><a href="#">N</a><a href="#"> P</a><a href="#"> Q </a><a href="#">S </a><a href="#">T </a><a href="#">V</a><a href="#"> W</a><a href="#"> X </a><a href="#">Y</a><a href="#"> Z </a><a href="#">0-9</a></div>
+      <div class="foot_downMiddle">Copyright  &copy;2014 投融届（www.trijcn.com) 版权所有 | ICP 经营许可证：浙B2-20130239</div>
+      <div class="foot_downDown"><img src="images/down_img01.jpg"/><img src="images/down_img02.jpg"/><img src="images/down_img03.jpg"/><img src="images/down_img04.jpg"/><img src="images/down_img05.jpg"/><img src="images/down_img06.jpg"/></div>
+    </div>
+  </div>
+</div>
+</html>

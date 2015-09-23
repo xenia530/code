@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+.top_ul{
+	width: 300px;
+	height: 1380px;
+	margin:10px 0 0 0;
+	}
+.top_ul li{
+	width: 140px;
+	line-height:27px;
+	text-align:center;
+	font-size:14px;
+	float:left;
+	}
+.main_book2_3Top{
+	width: 680px;
+	height: 500px;
+	background:red;
+	
+	}
+.main_book2_3Top .Left{
+	width: 340px;
+	height: 500px;
+	background:#998844;
+	float:left;;
+	}
+.main_book2_3Top .Right{
+	width: 340px;
+	height: 500px;
+	background:#889944;
+	float:right;
+	}
+.main_book2_3Middle{
+	width: 680px;
+	height: 570px;
+	background:green;
+	}
+.main_book2_3Down{
+	width: 680px;
+	height: 550px;
+	background:blue;
+	}
+.main_book2_3Top .Left ul li{
+	width: 680px;
+	height: 50px;
+	border-bottom:1px dotted #999;
+	}
